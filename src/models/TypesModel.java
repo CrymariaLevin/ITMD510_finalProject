@@ -1,3 +1,10 @@
+/**
+ * Final Project for ITMD510.
+ * Program to create a account book app to store and operate data with different users's privilege through database, display with JavaFX.
+ * @author: Li Mingyi Student, File Name: TypesModel.java
+ * This file represents Model class for a Type ;
+ */
+
 package models;
 
 public class TypesModel {

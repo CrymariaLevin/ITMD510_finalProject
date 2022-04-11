@@ -1,3 +1,10 @@
+/**
+ * Final Project for ITMD510.
+ * Program to create a account book app to store and operate data with different users's privilege through database, display with JavaFX.
+ * @author: Li Mingyi Student, File Name: LoginModel.java
+ * This file represents Model class for a User to check validation and privilege when login;
+ */
+
 package models;
 
 import DAO.DBConnect;
@@ -6,7 +13,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import static DAO.MD5.getMD5String;
+import static utils.MD5.getMD5String;
 
 
 public class LoginModel extends DBConnect {

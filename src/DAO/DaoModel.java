@@ -1,19 +1,20 @@
-/*
-   Lab4
-   Program to use a database to store then present Loan analysis information from early data BankRecords objects(Lab2).
-   Programmer: Li Mingyi Student, File Name: DaoModel.java
-   This file represents Data Access Object, defines CRUD (Create Read Update Delete) operations;
-*/
+/**
+ * Final Project
+ * Program to create a account book app to store and operate data with different users's privilege through database, display with JavaFX.
+ * @author: Li Mingyi Student, File Name: DaoModel.java
+ * This file represents Data Access Object, defines CRUD (Create Read Update Delete) operations;
+ */
 
 package DAO;
 
+import models.RecordFXModel;
 import models.RecordsModel;
 import models.TypesModel;
 import models.UsersModel;
+import utils.DateUtil;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.List;
 
 public class DaoModel {
 
@@ -27,7 +28,11 @@ public class DaoModel {
         conn = new DBConnect();
     }
 
-    // CREATE TABLE FOR THE FINAL PROJECT
+    /**
+     * CREATE TABLE FOR THE FINAL PROJECT
+     *
+     * @param
+     */
     public void createTable() {
         try {
             // Open a connection
@@ -75,7 +80,11 @@ public class DaoModel {
         }
     }
 
-    // INSERT INTO DATABASE FOR USERS TABLE
+    /**
+     * Insert into M_Li_fp_users TABLE
+     *
+     * @param user_array the UsersModel object list to be inserted
+     */
     public void insertUsers(ArrayList<UsersModel> user_array){
         try {
             Connection connection = conn.connect();
@@ -113,7 +122,11 @@ public class DaoModel {
         }
     }
 
-    // INSERT INTO DATABASE FOR TYPES TABLE
+    /**
+     * Insert into M_Li_fp_types TABLE
+     *
+     * @param type_array the TypesModel object list to be inserted
+     */
     public void insertTypes(ArrayList<TypesModel> type_array){
         try {
             Connection connection = conn.connect();
@@ -150,7 +163,11 @@ public class DaoModel {
         }
     }
 
-    // INSERT INTO DATABASE FOR RECORDS TABLE
+    /**
+     * Insert into M_Li_fp_records TABLE
+     *
+     * @param record_array the Record object list to be inserted
+     */
     public void insertRecords(ArrayList<RecordsModel> record_array){
         try {
             Connection connection = conn.connect();
@@ -216,45 +233,70 @@ public class DaoModel {
     }
 
     /**
-     * RETRIEVE username FROM M_Li_fp_users TABLE
+     * Get uid by username in database
      *
-     * @param uid the id to be returned the corresponding username
-     * @return ResultSet for username
+     * Returns -1 if the String could not be converted.
+     *
+     * @param username the account name as String
+     * @return the account name or null if it could not be converted
      */
-    public ResultSet retrieveAccount(int uid) {
-        ResultSet rs = null;
+    public int retrieveAccountID(String username) {
+        int uid;
         try {
             stmt = conn.connect().createStatement();
-            String sql = "SELECT username \n" +
-                    "FROM m_li_fp_users WHERE uid = " + uid;
-            rs = stmt.executeQuery(sql);
-//            stmt.close();
+            String sql = "SELECT uid \n" +
+                    "FROM m_li_fp_users WHERE username = '" + username + "'";
+            ResultSet rs = stmt.executeQuery(sql);
+            if (rs.next()) {
+                uid = rs.getInt("uid");
+            }else{
+                uid = -1;
+            }
+            stmt.close();
             conn.connect().close();
+            return uid;
         } catch (SQLException e) {
             e.printStackTrace();
+            return -1;
         }
-        return rs;
     }
 
     /**
-     * RETRIEVE typename FROM M_Li_fp_types TABLE
+     * Get tid by typename in database
      *
-     * @param tid the id to be returned the corresponding typename
-     * @return ResultSet for typename
+     * Returns -1 if the String could not be converted.
+     *
+     * @param typename the typename as String
+     * @return the account name or null if it could not be converted
      */
-    public ResultSet retrieveType(int tid) {
-        ResultSet rs = null;
+    public int retrieveTypeID(String typename, String transaction) {
+        int tid;
         try {
             stmt = conn.connect().createStatement();
-            String sql = "SELECT typename \n" +
-                    "FROM m_li_fp_types WHERE tid = " + tid;
-            rs = stmt.executeQuery(sql);
-//            stmt.close();
+            String sql = "SELECT tid \n" +
+                    "FROM m_li_fp_types WHERE typename = '" + typename + "'" +
+                    " and `TRANSACTION` =  '" + transaction + "'";
+//            System.out.println(sql);
+            ResultSet rs = stmt.executeQuery(sql);
+            if (rs.next()) {
+                tid = rs.getInt("tid");
+//                create new type
+            }else if((transaction == "Expense" || transaction == "Income") && typename.length() > 0){
+                ArrayList<TypesModel> new_type = new ArrayList<>();
+                new_type.add(new TypesModel(typename,transaction));
+                insertTypes(new_type);
+                tid = retrieveTypeID(typename,transaction);
+            }
+            else{
+                tid = -1;
+            }
+            stmt.close();
             conn.connect().close();
+            return tid;
         } catch (SQLException e) {
             e.printStackTrace();
+            return -1;
         }
-        return rs;
     }
 
     /**
@@ -273,6 +315,97 @@ public class DaoModel {
             conn.connect().close();
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+    }
+
+    /**
+     * Insert into M_Li_fp_records TABLE
+     *
+     * @param recordfx the RecordFXModel object to be inserted
+     */
+    public void insertNewRecords(RecordFXModel recordfx){
+        int tid = retrieveTypeID(recordfx.getType(),recordfx.getTransaction());
+        int uid = retrieveAccountID(recordfx.getAccount());
+        try {
+            Connection connection = conn.connect();
+//            using affairs with rollbacks and commits
+            connection.setAutoCommit(false);
+            System.out.println("Inserting records into the table M_Li_fp_records with new data...");
+            // The SQL string used to insert into database table
+            String sql = "INSERT INTO M_Li_fp_records (`date`,`amount`,`location`, `memo`, `tid`, `uid`)VALUES (?,?,?,?,?,?)";
+//            using prepared statements when inserting records
+            pstmt = connection.prepareStatement(sql);
+
+            // insert data into database table
+            pstmt.setString(1, DateUtil.format(recordfx.getDate()));
+            pstmt.setDouble(2, recordfx.getAmount());
+            pstmt.setString(3, recordfx.getLocation());
+            pstmt.setString(4, recordfx.getMemo());
+            if (tid > 0)
+                pstmt.setInt(5,tid);
+            if (uid > 0)
+                pstmt.setInt(6, uid);
+            pstmt.executeUpdate();
+            try {
+                connection.commit();
+            } catch (SQLException se){
+                connection.rollback();
+                System.out.println("SQL Error,roll back");
+            }
+            pstmt.close();
+            System.out.println("Inserting records into table M_Li_fp_records with new data successfully");
+            connection.setAutoCommit(true);
+            connection.close();
+        } catch (Exception se) {
+            System.out.println("Insert Error:\n");
+            se.printStackTrace();
+        }
+    }
+
+    /**
+     * Update M_Li_fp_records TABLE
+     *
+     * @param recordfx the RecordFXModel object to be updated
+     */
+    public void updateEditRecords(RecordFXModel recordfx){
+        int tid = retrieveTypeID(recordfx.getType(),recordfx.getTransaction());
+        int uid = retrieveAccountID(recordfx.getAccount());
+        try {
+            Connection connection = conn.connect();
+//            using affairs with rollbacks and commits
+            connection.setAutoCommit(false);
+            System.out.println("updating records into the table M_Li_fp_records with edited data...");
+            // The SQL string used to update database table
+            String sql = "UPDATE M_Li_fp_records SET `date` = ?,`amount` = ?,`location` = ?, `memo` = ?, `tid` = ?, `uid` = ?" +
+                    " WHERE rid = ?";
+//            using prepared statements when inserting records
+            pstmt = connection.prepareStatement(sql);
+
+            // insert data into database table
+            pstmt.setString(1, DateUtil.format(recordfx.getDate()));
+            pstmt.setDouble(2, recordfx.getAmount());
+            pstmt.setString(3, recordfx.getLocation());
+            pstmt.setString(4, recordfx.getMemo());
+            if (tid > 0)
+                pstmt.setInt(5,tid);
+            if (uid > 0)
+                pstmt.setInt(6, uid);
+            pstmt.setInt(7, Integer.parseInt(recordfx.getRid()));
+//            System.out.println(pstmt);
+            pstmt.executeUpdate();
+            try {
+                connection.commit();
+            } catch (SQLException se){
+                connection.rollback();
+                System.out.println("SQL Error,roll back");
+            }
+            pstmt.close();
+            System.out.println("Update records into table M_Li_fp_records with edit data successfully");
+            connection.setAutoCommit(true);
+            connection.close();
+        } catch (Exception se) {
+            System.out.println("Insert Error:\n");
+            se.printStackTrace();
         }
     }
 }

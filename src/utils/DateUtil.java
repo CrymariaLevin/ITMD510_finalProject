@@ -1,14 +1,17 @@
+/**
+ * Final Project for ITMD510.
+ * Program to create a account book to store and operate data with different users's privilege through database, display with JavaFX.
+ * @author: Li Mingyi Student, File Name: DateUtil.java
+ * This file represents a Helper functions for handling dates, including transfer and validate;
+ */
+
 package utils;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
-/**
- * Helper functions for handling dates.
- * Includiung transfer and validate
- * @author Mingyi Li
- */
+
 public class DateUtil {
 
 //    The date pattern that is used for conversion.

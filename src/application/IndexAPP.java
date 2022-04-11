@@ -1,7 +1,8 @@
 /**
- Program using an MVC format to accomplish a family account book.
- Programmer: Li Mingyi Student, File Name: IndexAPP.java
- This file is to create an observable list of Records for the index page.
+ * Final Project for ITMD510
+ * Program to create a account book app to store and operate data with different users's privilege through database, display with JavaFX.
+ * Programmer: Li Mingyi Student, File Name: IndexAPP.java
+ *  This file is to create an observable list of Records for the index page.
  */
 
 package application;

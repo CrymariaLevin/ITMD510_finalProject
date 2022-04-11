@@ -1,10 +1,11 @@
 /**
-   Program using an MVC format to accomplish a family account book.
-   Programmer: Li Mingyi Student, File Name: MD5.java
-   This file is to transfer a String password to a MD5 type String as an encryption
-*/
+ * Final Project for ITMD510.
+ * Program to create a account book app to store and operate data with different users's privilege through database, display with JavaFX.
+ * @author: Li Mingyi Student, File Name: MD5.java
+ * This file is to transfer a String password to a MD5 type String as an encryption
+ */
 
-package DAO;
+package utils;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;

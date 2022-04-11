@@ -1,3 +1,10 @@
+/**
+ * Final Project for ITMD510.
+ * Program to create a account book app to store and operate data with different users's privilege through database, display with JavaFX.
+ * @author: Li Mingyi Student, File Name: Preparation.java
+ * This file is to create some test data for the app;
+ */
+
 package controllers;
 
 import DAO.DaoModel;

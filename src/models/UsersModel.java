@@ -1,7 +1,14 @@
+/**
+ * Final Project for ITMD510.
+ * Program to create a account book app to store and operate data with different users's privilege through database, display with JavaFX.
+ * @author: Li Mingyi Student, File Name: UsersModel.java
+ * This file represents Model class for a User object;
+ */
+
 package models;
 
 
-import static DAO.MD5.getMD5String;
+import static utils.MD5.getMD5String;
 
 public class UsersModel {
     private String username;

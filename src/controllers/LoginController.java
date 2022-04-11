@@ -1,8 +1,10 @@
 /**
- * Final project for ITMD510.
- * Login controller for login page
- * @author Mingyi Li
+ * Final Project for ITMD510.
+ * Program to create a account book app to store and operate data with different users's privilege through database, display with JavaFX.
+ * @author: Li Mingyi Student, File Name: LoginController.java
+ * This file represents Login controller for login page;
  */
+
 package controllers;
 
 import application.IndexAPP;

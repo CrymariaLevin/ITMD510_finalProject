@@ -1,8 +1,8 @@
 /**
- * Final Project
- * Dialog to edit details of a record
- *
- * @author Mingyi Li
+ * Final Project for ITMD510.
+ * Program to create a account book app to store and operate data with different users's privilege through database, display with JavaFX.
+ * @author: Li Mingyi Student, File Name: RecordEditDialogController.java
+ * This file represents Dialog controller to edit details of a record;
  */
 
 package controllers;
@@ -125,7 +125,7 @@ public class RecordEditDialogController {
         ArrayList<String> transaction_arrays=new ArrayList<>(Arrays.asList(transaction_list));
 
         if (accountField.getText() == null || accountField.getText().length() == 0 || !account_arrays.contains(accountField.getText())) {
-            errorMessage += "No valid account name! Account must be 'Husband' or 'Wife'\n";
+            errorMessage += "No valid account name! Account don't exist'\n";
         }
         if (transactionField.getText() == null || transactionField.getText().length() == 0 || !transaction_arrays.contains(transactionField.getText())){
             errorMessage += "No valid transaction! Transaction must be 'Income' or 'Expense'";

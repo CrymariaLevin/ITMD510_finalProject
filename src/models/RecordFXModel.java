@@ -1,14 +1,16 @@
+/**
+ * Final Project for ITMD510.
+ * Program to create a account book app to store and operate data with different users's privilege through database, display with JavaFX.
+ * @author: Li Mingyi Student, File Name: RecordFXModel.java
+ * This file represents Model class for a Record in SceneBuilder type (Property);
+ */
+
 package models;
 
 import java.time.LocalDateTime;
 
 import javafx.beans.property.*;
 
-/**
- * Model class for a Person.
- *
- * @author Marco Jakob
- */
 public class RecordFXModel {
 
 //    private final IntegerProperty rid;

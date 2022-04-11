@@ -1,3 +1,10 @@
+/**
+ * Final Project for ITMD510.
+ * Program to create a account book app to store and operate data with different users's privilege through database, display with JavaFX.
+ * @author: Li Mingyi Student, File Name: IndexController.java
+ * This file represents index controller for index page;
+ */
+
 package controllers;
 
 import DAO.DaoModel;
@@ -8,7 +15,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import models.RecordFXModel;
 import utils.DateUtil;
-import utils.IDValueUtil;
 
 import java.time.LocalDateTime;
 
@@ -134,10 +140,13 @@ public class IndexController {
     @FXML
     private void handleNewRecord() {
 //        RecordFXModel tempRecord = new RecordFXModel();
-        RecordFXModel tempRecord = new RecordFXModel("", LocalDateTime.now(),"",0.0,"","","","");
+        RecordFXModel tempRecord = new RecordFXModel("", LocalDateTime.now(),"Expense",0.0,"","","","");
         boolean okClicked = indexApp.showRecordEditDialog(tempRecord);
         if (okClicked) {
+//            now record's data has been edited
             indexApp.getRecordsData().add(tempRecord);
+            DaoModel dao = new DaoModel();
+            dao.insertNewRecords(tempRecord);
         }
     }
 
@@ -152,6 +161,8 @@ public class IndexController {
             boolean okClicked = indexApp.showRecordEditDialog(selectedRecord);
             if (okClicked) {
                 showRecordDetails(selectedRecord);
+                DaoModel dao = new DaoModel();
+                dao.updateEditRecords(selectedRecord);
             }
 
         } else {

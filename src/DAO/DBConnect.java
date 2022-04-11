@@ -1,9 +1,9 @@
-/*
-   Lab4
-   Program to use a database to store then present Loan analysis information from early data BankRecords objects(Lab2).
-   Programmer: Li Mingyi Student, File Name: DBConnect.java
-   This file allows an object to connect / close a database connection;
-*/
+/**
+ * Final Project
+ * Program to create a account book app to store and operate data with different users's privilege through database, display with JavaFX.
+ * @author: Li Mingyi Student, File Name: DBConnect.java
+ * This file allows an object to connect / close a database connection;
+ */
 
 package DAO;
 
@@ -17,8 +17,7 @@ public class DBConnect {
 //    // Database credentials
 //    static final String USER = "fp510", PASS = "510";
 
-    static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/itmd?useServerPrepStmts=true&useSSL=false&serverTimezone=UTC";
-    // Database credentials
+    static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/itmd?autoReconnect=true&useServerPrepStmts=true&useSSL=false&serverTimezone=UTC";
     static final String USER = "root", PASS = "580225";
 
     protected Connection connection;
