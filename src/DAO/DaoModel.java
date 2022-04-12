@@ -81,7 +81,7 @@ public class DaoModel {
     }
 
     /**
-     * Insert into M_Li_fp_users TABLE
+     * Insert an array into M_Li_fp_users TABLE
      *
      * @param user_array the UsersModel object list to be inserted
      */
@@ -89,7 +89,7 @@ public class DaoModel {
         try {
             Connection connection = conn.connect();
             // start a query process
-            System.out.println("Inserting records into the table M_Li_fp_users...");
+            System.out.println("Inserting users into the table M_Li_fp_users...");
 //            using affairs with rollbacks and commits
             connection.setAutoCommit(false);
             // The SQL string used to insert into database table
@@ -113,7 +113,116 @@ public class DaoModel {
                 System.out.println("SQL Error,roll back");
             }
             pstmt.close();
+            System.out.println("Inserting users into table M_Li_fp_users successfully");
+            connection.setAutoCommit(true);
+            connection.close();
+        } catch (Exception e) {
+            System.out.println("Insert Error:\n");
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Insert single records into M_Li_fp_users TABLE
+     *
+     * @param user the UsersModel object list to be inserted
+     */
+    public void insertUsers(UsersModel user){
+        try {
+            Connection connection = conn.connect();
+            // start a query process
+            System.out.println("Inserting users into the table M_Li_fp_users...");
+//            using affairs with rollbacks and commits
+            connection.setAutoCommit(false);
+            // The SQL string used to insert into database table
+            String sql = "INSERT INTO M_Li_fp_users (`username`,`password`,`is_admin`)VALUES (?,?,?)";
+//            using prepared statements when inserting records
+            pstmt = connection.prepareStatement(sql);
+            // insert data into database table
+            pstmt.setString(1, user.getUsername());
+            pstmt.setString(2, user.getPassword());
+            pstmt.setInt(3, user.getIs_admin());
+            pstmt.executeUpdate();
+            try {
+                connection.commit();
+            } catch (SQLException se){
+                connection.rollback();
+                System.out.println("SQL Error,roll back");
+            }
+            pstmt.close();
             System.out.println("Inserting records into table M_Li_fp_users successfully");
+            connection.setAutoCommit(true);
+            connection.close();
+        } catch (Exception e) {
+            System.out.println("Insert Error:\n");
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Update single records into M_Li_fp_users TABLE
+     *
+     * @param user the UsersModel object list to be updated
+     */
+    public void updateUsers(UsersModel user){
+        try {
+            Connection connection = conn.connect();
+            // start a query process
+            System.out.println("Updating user into the table M_Li_fp_users...");
+//            using affairs with rollbacks and commits
+            connection.setAutoCommit(false);
+            // The SQL string used to insert into database table
+            String sql = "UPDATE M_Li_fp_users SET `is_admin` = ? WHERE `username` = ?";
+//            using prepared statements when inserting records
+            pstmt = connection.prepareStatement(sql);
+            // insert data into database table
+            pstmt.setString(2, user.getUsername());
+            pstmt.setInt(1, user.getIs_admin());
+            pstmt.executeUpdate();
+            try {
+                connection.commit();
+            } catch (SQLException se){
+                connection.rollback();
+                System.out.println("SQL Error,roll back");
+            }
+            pstmt.close();
+            System.out.println("Update user into table M_Li_fp_users successfully");
+            connection.setAutoCommit(true);
+            connection.close();
+        } catch (Exception e) {
+            System.out.println("Insert Error:\n");
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Delete single records from M_Li_fp_users TABLE
+     *
+     * @param user the UsersModel object list to be deleted
+     */
+    public void deleteUsers(UsersModel user){
+        try {
+            Connection connection = conn.connect();
+            // start a query process
+            System.out.println("Deleting user into the table M_Li_fp_users...");
+//            using affairs with rollbacks and commits
+            connection.setAutoCommit(false);
+            // The SQL string used to insert into database table
+            String sql = "DELETE FROM M_Li_fp_users WHERE `username` = ?";
+//            using prepared statements when inserting records
+            pstmt = connection.prepareStatement(sql);
+            // insert data into database table
+            pstmt.setString(2, user.getUsername());
+            pstmt.setInt(1, user.getIs_admin());
+            pstmt.executeUpdate();
+            try {
+                connection.commit();
+            } catch (SQLException se){
+                connection.rollback();
+                System.out.println("SQL Error,roll back");
+            }
+            pstmt.close();
+            System.out.println("Delete user from table M_Li_fp_users successfully");
             connection.setAutoCommit(true);
             connection.close();
         } catch (Exception e) {

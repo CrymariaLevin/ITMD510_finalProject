@@ -10,12 +10,12 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
    <children>
       <TextField fx:id="txtUsername" layoutX="209.0" layoutY="87.0" />
+      <PasswordField fx:id="txtPassword" layoutX="209.0" layoutY="152.0" />
       <Button alignment="CENTER" layoutX="256.0" layoutY="201.0" mnemonicParsing="false" onAction="#login" text="Submit">
          <font>
             <Font size="14.0" />
          </font></Button>
       <Label fx:id="lblError" layoutX="151.0" layoutY="285.0" prefHeight="15.0" prefWidth="287.0" textAlignment="CENTER" />
-      <PasswordField fx:id="txtPassword" layoutX="209.0" layoutY="152.0" />
       <Label layoutX="209.0" layoutY="66.0" text="User name">
          <font>
             <Font size="14.0" />

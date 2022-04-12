@@ -13,6 +13,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import models.RecordFXModel;
 import utils.DateUtil;
@@ -54,9 +55,13 @@ public class IndexController {
     @FXML
     private Label lblUsername;
 
+    @FXML
+    private Pane paneField;
+
 
     private String rid;
     private String username;
+    private boolean visible;
 
     // Reference to the index application.
     private IndexAPP indexApp;
@@ -79,6 +84,7 @@ public class IndexController {
         showRecordDetails(null);
 
         lblUsername.setText(username);
+        paneField.setVisible(visible);
 
         // Listen for selection changes and show the record details when changed.
         recordsTable.getSelectionModel().selectedItemProperty().addListener(
@@ -94,6 +100,7 @@ public class IndexController {
         // Add observable list data to the table
         recordsTable.setItems(indexApp.getRecordsData());
         this.username = indexApp.getUsername();
+        this.visible = indexApp.isVisible();
     }
 
     /**
@@ -113,6 +120,16 @@ public class IndexController {
     public void setUsername(String account) {
         this.username = account;
         lblUsername.setText(account);
+    }
+
+    /**
+     * Gets the pane's visible login to the page.
+     *
+     * @param visible
+     */
+    public void setVisible(boolean visible) {
+        this.visible = visible;
+        paneField.setVisible(visible);
     }
 
     /**
@@ -196,6 +213,46 @@ public class IndexController {
         } else {
             // Nothing selected.
             System.out.println("nothing selected");
+        }
+    }
+
+    /**
+     * Called when the user clicks on the delete account button.
+     */
+    @FXML
+    private void handleDeleteAccount() {
+        String operation = "Del user";
+//        first get the record's id then delete
+        boolean okClicked = indexApp.showAccountEditDialog(operation);
+        if (okClicked) {
+            DaoModel dao = new DaoModel();
+            dao.deleteUsers(AccountController.user);
+        }
+    }
+
+    /**
+     * Called when the user clicks the add account button. Opens a dialog to edit
+     */
+    @FXML
+    private void handleNewAccount() {
+        String operation = "New user";
+        boolean okClicked = indexApp.showAccountEditDialog(operation);
+        if (okClicked) {
+            DaoModel dao = new DaoModel();
+            dao.insertUsers(AccountController.user);
+        }
+    }
+
+    /**
+     * Called when the user clicks the change priv button. Opens a dialog to edit
+     */
+    @FXML
+    private void handleEditAccount() {
+        String operation = "Change Privilege";
+        boolean okClicked = indexApp.showAccountEditDialog(operation);
+        if (okClicked) {
+            DaoModel dao = new DaoModel();
+            dao.updateUsers(AccountController.user);
         }
     }
 

@@ -8,6 +8,7 @@
 package application;
 
 import DAO.DaoModel;
+import controllers.AccountController;
 import controllers.IndexController;
 import controllers.RecordEditDialogController;
 import javafx.application.Application;
@@ -15,6 +16,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
@@ -32,6 +34,7 @@ public class IndexAPP extends Application {
     private Stage primaryStage; // set global stage object!!!
     private BorderPane rootLayout;
     private String username;
+    private boolean visible;
 
     private ObservableList<RecordFXModel> recordsData = FXCollections.observableArrayList();
 
@@ -85,17 +88,21 @@ public class IndexAPP extends Application {
         try {
             // Load index overview.
 
-            FXMLLoader loader = new FXMLLoader(IndexAPP.class.getResource("/views/IndexViewAdmin.fxml"));
+            FXMLLoader loader = new FXMLLoader(IndexAPP.class.getResource("/views/IndexView.fxml"));
             AnchorPane indexView = (AnchorPane) loader.load();
             // Show the scene containing the root
             Scene scene = new Scene(indexView);
-            primaryStage.setTitle("Admin View");
+            if (visible)
+                primaryStage.setTitle("Admin View");
+            else
+                primaryStage.setTitle("Client View");
             primaryStage.setScene(scene);
             primaryStage.show();
 
             // Give the controller access to the main app.
             IndexController controller = loader.getController();
             controller.setUsername(username);
+            controller.setVisible(visible);
             controller.setIndexAPP(this);
 
         } catch (IOException e) {
@@ -147,12 +154,67 @@ public class IndexAPP extends Application {
         }
     }
 
+    /**
+     * Opens a dialog to edit account. If the user
+     * clicks OK, the changes are saved into the database and true
+     * is returned.
+     *
+     * @param operation the operation to be handled
+     * @return true if the user clicked OK, false otherwise.
+     */
+    public boolean showAccountEditDialog(String operation) {
+        try {
+            // Load the fxml file and create a new stage for the popup dialog.
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(IndexAPP.class.getResource("/views/AccountEditDialog.fxml"));
+            AnchorPane page = (AnchorPane) loader.load();
+
+            // Create the dialog Stage.
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Edit Account");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+
+            // Set the record into the controller.
+            AccountController controller = loader.getController();
+            controller.setDialogStage(dialogStage);
+            controller.setChoiceBox();
+            controller.setOperation(operation);
+            if (operation.equals("Change Privilege")){
+                controller.setVisible(true,false);
+            }else if (operation.equals("Del user")){
+                controller.setVisible(false,false);
+            }else{ // New user
+                controller.setVisible(true,true);
+            }
+
+            // Show the dialog and wait until the user closes it
+            dialogStage.showAndWait();
+
+            return controller.isOkClicked();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
     public String getUsername() {
         return username;
     }
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public boolean isVisible() {
+        return visible;
+    }
+
+    public void setVisible(boolean visible) {
+        this.visible = visible;
     }
 
     public static void main(String[] args) {

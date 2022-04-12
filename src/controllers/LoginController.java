@@ -7,7 +7,6 @@
 
 package controllers;
 
-import application.IndexAPP;
 import application.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -79,22 +78,18 @@ public class LoginController {
 			AnchorPane root;
 			if (model.isAdmin()) {
 				// If user is admin, inflate admin view
-//				root = (AnchorPane)  FXMLLoader.load(getClass().getResource("/views/IndexViewAdmin.fxml"));
+//				root = (AnchorPane)  FXMLLoader.load(getClass().getResource("/views/IndexView.fxml"));
 //				Main.stage.setTitle("Admin View");
 
 //				IndexAPP indexAPP = new IndexAPP();
 //				indexAPP.start(Main.stage);
 
 //				System.out.println("is admin");
-				new Main().showIndexScene(username);
+				new Main().showIndexScene(username,true);
 
 			} else {
 				// If user is customer, inflate customer view
-				root = (AnchorPane) FXMLLoader.load(getClass().getResource("/views/IndexViewClient.fxml"));
-				// ***Set user ID acquired from db****
-				int user_id = 1;  //hard coded for testing purposes only!!
-				//ClientController.setUser(user_id);
-				Main.stage.setTitle("Client View");
+				new Main().showIndexScene(username,false);
 			}
 //			Scene scene = new Scene(root);
 //			Main.stage.setScene(scene);

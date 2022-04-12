@@ -51,11 +51,11 @@
                               </HBox>
                            </children>
                         </AnchorPane>
-                        <Pane layoutX="1.0" layoutY="265.0" prefHeight="67.0" prefWidth="300.0">
+                        <Pane fx:id="paneField" layoutX="1.0" layoutY="265.0" prefHeight="67.0" prefWidth="300.0">
                            <children>
-                              <Button layoutX="4.0" layoutY="22.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="97.0" text="Add member" />
-                              <Button layoutX="211.0" layoutY="22.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="89.0" text="Change priv" />
-                              <Button layoutX="108.0" layoutY="22.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="97.0" text="Del member" />
+                              <Button layoutX="4.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleNewAccount" prefHeight="23.0" prefWidth="97.0" text="Add member" />
+                              <Button layoutX="211.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleEditAccount" prefHeight="23.0" prefWidth="89.0" text="Change priv" />
+                              <Button layoutX="108.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleDeleteAccount" prefHeight="23.0" prefWidth="97.0" text="Del member" />
                            </children>
                         </Pane>
                         <Label fx:id="lblUsername" layoutX="43.0" layoutY="368.0" text="Label" />

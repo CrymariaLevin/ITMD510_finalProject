@@ -45,11 +45,12 @@ public class Main extends Application {
 	 * @param username the account's name to pass to the index
 	 * @return
 	 */
-	public void showIndexScene(String username) {
+	public void showIndexScene(String username, boolean visible) {
 		try {
 			IndexAPP indexAPP = new IndexAPP();
 			// Set the record into the controller.
 			indexAPP.setUsername(username);
+			indexAPP.setVisible(visible);
 //			System.out.println("Main username input");
 			indexAPP.start(Main.stage);
 

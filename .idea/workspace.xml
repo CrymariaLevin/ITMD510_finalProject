@@ -2,40 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="1.add edit logic in index page;&#10;2.add comments to each file's title">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/TestDemo.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/controllers/AccountController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/views/AccountEditDialog.fxml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalProject/DAO/DBConnect.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/DAO/DBConnect.class" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalProject/DAO/DaoModel.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/DAO/DaoModel.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalProject/DAO/MD5.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalProject/application/IndexAPP.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/application/IndexAPP.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalProject/application/Main.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/application/Main.class" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalProject/controllers/IndexController.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/controllers/IndexController.class" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalProject/controllers/LoginController.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/controllers/LoginController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalProject/controllers/Preparation.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/controllers/Preparation.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalProject/controllers/RecordEditDialogController.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/controllers/RecordEditDialogController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalProject/models/LoginModel.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/models/LoginModel.class" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalProject/models/RecordFXModel.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/models/RecordFXModel.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalProject/models/RecordsModel.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/models/RecordsModel.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalProject/models/TypesModel.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/models/TypesModel.class" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalProject/models/UsersModel.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/models/UsersModel.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalProject/utils/DateUtil.class" afterPath="$PROJECT_DIR$/out/production/FinalProject/utils/DateUtil.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalProject/utils/IDValueUtil.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalProject/views/RecordEditDialog.fxml" afterPath="$PROJECT_DIR$/out/production/FinalProject/views/RecordEditDialog.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/DBConnect.java" afterPath="$PROJECT_DIR$/src/DAO/DBConnect.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalProject/views/IndexViewAdmin.fxml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/DAO/DaoModel.java" afterPath="$PROJECT_DIR$/src/DAO/DaoModel.java" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/MD5.java" afterPath="$PROJECT_DIR$/src/utils/MD5.java" />
+      <change beforePath="$PROJECT_DIR$/src/TestDemo.java" afterPath="$PROJECT_DIR$/src/TestDemo.java" />
       <change beforePath="$PROJECT_DIR$/src/application/IndexAPP.java" afterPath="$PROJECT_DIR$/src/application/IndexAPP.java" />
+      <change beforePath="$PROJECT_DIR$/src/application/Main.java" afterPath="$PROJECT_DIR$/src/application/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/controllers/IndexController.java" afterPath="$PROJECT_DIR$/src/controllers/IndexController.java" />
       <change beforePath="$PROJECT_DIR$/src/controllers/LoginController.java" afterPath="$PROJECT_DIR$/src/controllers/LoginController.java" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Preparation.java" afterPath="$PROJECT_DIR$/src/controllers/Preparation.java" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/RecordEditDialogController.java" afterPath="$PROJECT_DIR$/src/controllers/RecordEditDialogController.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/LoginModel.java" afterPath="$PROJECT_DIR$/src/models/LoginModel.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/RecordFXModel.java" afterPath="$PROJECT_DIR$/src/models/RecordFXModel.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/RecordsModel.java" afterPath="$PROJECT_DIR$/src/models/RecordsModel.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/TypesModel.java" afterPath="$PROJECT_DIR$/src/models/TypesModel.java" />
       <change beforePath="$PROJECT_DIR$/src/models/UsersModel.java" afterPath="$PROJECT_DIR$/src/models/UsersModel.java" />
-      <change beforePath="$PROJECT_DIR$/src/utils/DateUtil.java" afterPath="$PROJECT_DIR$/src/utils/DateUtil.java" />
-      <change beforePath="$PROJECT_DIR$/src/utils/IDValueUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/views/IndexViewAdmin.fxml" afterPath="$PROJECT_DIR$/src/views/IndexView.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/views/LoginView.fxml" afterPath="$PROJECT_DIR$/src/views/LoginView.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,55 +88,35 @@
       <file leaf-file-name="IndexAPP.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/IndexAPP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+            <state relative-caret-position="219">
+              <caret line="181" column="20" lean-forward="true" selection-start-line="181" selection-start-column="20" selection-end-line="181" selection-end-column="20" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#2583#2584#0" expanded="true" />
-                <element signature="e#2617#2618#0" expanded="true" />
-                <element signature="e#3812#3813#0" expanded="true" />
-                <element signature="e#3847#3848#0" expanded="true" />
-                <element signature="e#5388#5389#0" expanded="true" />
-                <element signature="e#5416#5417#0" expanded="true" />
+                <element signature="e#2671#2672#0" expanded="true" />
+                <element signature="e#2705#2706#0" expanded="true" />
+                <element signature="e#3761#3762#0" expanded="true" />
+                <element signature="e#3796#3797#0" expanded="true" />
+                <element signature="e#7111#7112#0" expanded="true" />
+                <element signature="e#7142#7143#0" expanded="true" />
+                <element signature="e#7190#7191#0" expanded="true" />
+                <element signature="e#7230#7231#0" expanded="true" />
+                <element signature="e#7264#7265#0" expanded="true" />
+                <element signature="e#7294#7295#0" expanded="true" />
+                <element signature="e#7341#7342#0" expanded="true" />
+                <element signature="e#7379#7380#0" expanded="true" />
+                <element signature="e#7425#7426#0" expanded="true" />
+                <element signature="e#7453#7454#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controllers/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#2622#2623#0" expanded="true" />
-                <element signature="e#2649#2650#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controllers/IndexController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecordEditDialogController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RecordEditDialogController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controllers/RecordEditDialogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
+            <state relative-caret-position="-1835">
+              <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="34" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -164,107 +131,123 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DaoModel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DAO/DaoModel.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="302" column="47" lean-forward="true" selection-start-line="302" selection-start-column="47" selection-end-line="302" selection-end-column="47" />
+            <state relative-caret-position="262">
+              <caret line="49" column="41" lean-forward="false" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#694#695#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-                <marker date="1649664735443" expanded="true" signature="1303:1656" ph="CREATE TABLE... IF" />
-                <marker date="1649664735443" expanded="true" signature="1843:2157" ph="CREATE TABLE... IF" />
-                <marker date="1649664735443" expanded="true" signature="2348:2821" ph="CREATE TABLE... IF" />
-                <marker date="1649664735443" expanded="true" signature="3713:3787" ph="INSERT INTO M_Li_fp_users... " />
-                <marker date="1649664735443" expanded="true" signature="5507:5571" ph="INSERT INTO M_Li_fp_types... " />
-                <marker date="1649664735443" expanded="true" signature="7244:7342" ph="INSERT INTO M_Li_tab... " />
-                <marker date="1649664735443" expanded="true" signature="9014:9314" ph="SELECT * fro... M_Li_tab" />
-                <marker date="1649664735443" expanded="true" signature="9996:10070" ph="SELECT usern... m_li_fp_users" />
-                <marker date="1649664735443" expanded="true" signature="9996:10071" ph="SELECT uid \... m_li_fp_users" />
-                <marker date="1649664735443" expanded="true" signature="9996:10072" ph="SELECT uid \... m_li_fp_users" />
-                <marker date="1649664735443" expanded="true" signature="9996:10083" ph="SELECT uid \... m_li_fp_users" />
-                <marker date="1649664735443" expanded="true" signature="9996:10088" ph="SELECT uid \... m_li_fp_users" />
-                <marker date="1649664735443" expanded="true" signature="10883:10957" ph="SELECT typen... m_li_fp_types" />
-                <marker date="1649664735443" expanded="true" signature="10883:11020" ph="SELECT tid \... m_li_fp_types" />
-                <marker date="1649664735443" expanded="true" signature="10883:11022" ph="SELECT tid \... m_li_fp_types" />
-                <marker date="1649664735443" expanded="true" signature="10883:11043" ph="SELECT tid \... m_li_fp_types" />
-                <marker date="1649664735443" expanded="true" signature="12121:12186" ph="DELETE FROM m_li_fp_records... " />
-                <marker date="1649664735443" expanded="true" signature="12132:12186" ph="SELECT typen... m_li_fp_types" />
-                <marker date="1649664735443" expanded="true" signature="13062:13160" ph="INSERT INTO M_Li_fp_records... " />
-                <marker date="1649664735443" expanded="true" signature="14945:15083" ph="UPDATE M_Li_fp_records... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestDemo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestDemo.java">
+      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="476">
+              <caret line="251" column="52" lean-forward="false" selection-start-line="251" selection-start-column="52" selection-end-line="251" selection-end-column="52" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2961#2962#0" expanded="true" />
+                <element signature="e#3005#3006#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecordFXModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/RecordFXModel.java">
+      <file leaf-file-name="AccountController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/AccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="297">
+              <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#2125#2126#0" expanded="true" />
-                <element signature="e#2162#2163#0" expanded="true" />
-                <element signature="e#2210#2211#0" expanded="true" />
-                <element signature="e#2241#2242#0" expanded="true" />
-                <element signature="e#2289#2290#0" expanded="true" />
-                <element signature="e#2332#2333#0" expanded="true" />
-                <element signature="e#2362#2363#0" expanded="true" />
-                <element signature="e#2394#2395#0" expanded="true" />
-                <element signature="e#2437#2438#0" expanded="true" />
-                <element signature="e#2463#2464#0" expanded="true" />
-                <element signature="e#2501#2502#0" expanded="true" />
-                <element signature="e#2534#2535#0" expanded="true" />
-                <element signature="e#2572#2573#0" expanded="true" />
-                <element signature="e#2612#2613#0" expanded="true" />
-                <element signature="e#2663#2664#0" expanded="true" />
-                <element signature="e#2697#2698#0" expanded="true" />
-                <element signature="e#2751#2752#0" expanded="true" />
-                <element signature="e#2800#2801#0" expanded="true" />
-                <element signature="e#2833#2834#0" expanded="true" />
-                <element signature="e#2868#2869#0" expanded="true" />
-                <element signature="e#2914#2915#0" expanded="true" />
-                <element signature="e#2943#2944#0" expanded="true" />
-                <element signature="e#2987#2988#0" expanded="true" />
-                <element signature="e#3026#3027#0" expanded="true" />
-                <element signature="e#3057#3058#0" expanded="true" />
-                <element signature="e#3090#3091#0" expanded="true" />
-                <element signature="e#3134#3135#0" expanded="true" />
-                <element signature="e#3161#3162#0" expanded="true" />
-                <element signature="e#3201#3202#0" expanded="true" />
-                <element signature="e#3236#3237#0" expanded="true" />
-                <element signature="e#3270#3271#0" expanded="true" />
-                <element signature="e#3306#3307#0" expanded="true" />
-                <element signature="e#3353#3354#0" expanded="true" />
-                <element signature="e#3383#3384#0" expanded="true" />
-                <element signature="e#3429#3430#0" expanded="true" />
-                <element signature="e#3470#3471#0" expanded="true" />
-                <element signature="e#3501#3502#0" expanded="true" />
-                <element signature="e#3534#3535#0" expanded="true" />
-                <element signature="e#3578#3579#0" expanded="true" />
-                <element signature="e#3605#3606#0" expanded="true" />
-                <element signature="e#3645#3646#0" expanded="true" />
-                <element signature="e#3680#3681#0" expanded="true" />
-                <element signature="e#3718#3719#0" expanded="true" />
-                <element signature="e#3751#3752#0" expanded="true" />
-                <element signature="e#3810#3811#0" expanded="true" />
-                <element signature="e#3837#3838#0" expanded="true" />
-                <element signature="e#3884#3885#0" expanded="true" />
-                <element signature="e#3919#3920#0" expanded="true" />
+                <element signature="e#1582#1583#0" expanded="true" />
+                <element signature="e#1628#1629#0" expanded="true" />
+                <element signature="e#2607#2608#0" expanded="true" />
+                <element signature="e#2639#2640#0" expanded="true" />
+                <element signature="e#3186#3187#0" expanded="true" />
+                <element signature="e#3221#3222#0" expanded="true" />
+                <element signature="e#4163#4164#0" expanded="true" />
+                <element signature="e#4190#4191#0" expanded="true" />
+                <element signature="e#4234#4235#0" expanded="true" />
+                <element signature="e#4266#4267#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/UsersModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1014">
+              <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+              <folding>
+                <element signature="e#1295#1296#0" expanded="true" />
+                <element signature="e#1335#1336#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="87" column="32" lean-forward="false" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#982#983#0" expanded="true" />
+                <element signature="e#1013#1014#0" expanded="true" />
+                <element signature="e#2634#2635#0" expanded="true" />
+                <element signature="e#2661#2662#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DaoModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAO/DaoModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-278">
+              <caret line="191" column="31" lean-forward="true" selection-start-line="191" selection-start-column="31" selection-end-line="191" selection-end-column="31" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#694#695#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+                <marker date="1649744596726" expanded="true" signature="1303:1656" ph="CREATE TABLE... IF" />
+                <marker date="1649744596726" expanded="true" signature="1843:2157" ph="CREATE TABLE... IF" />
+                <marker date="1649744596726" expanded="true" signature="2348:2821" ph="CREATE TABLE... IF" />
+                <marker date="1649744596726" expanded="true" signature="3720:3794" ph="INSERT INTO M_Li_fp_users... " />
+                <marker date="1649744596726" expanded="true" signature="5502:5576" ph="INSERT INTO M_Li_fp_users... " />
+                <marker date="1649744596726" expanded="true" signature="7022:7082" ph="UPDATE M_Li_fp_users... " />
+                <marker date="1649744596726" expanded="true" signature="8470:8516" ph="DELETE FROM M_Li_fp_users... " />
+                <marker date="1649744596726" expanded="true" signature="9917:9981" ph="INSERT INTO M_Li_fp_types... " />
+                <marker date="1649744596726" expanded="true" signature="11654:11752" ph="INSERT INTO M_Li_tab... " />
+                <marker date="1649744596726" expanded="true" signature="13424:13724" ph="SELECT * fro... M_Li_tab" />
+                <marker date="1649744596726" expanded="true" signature="14406:14480" ph="SELECT usern... m_li_fp_users" />
+                <marker date="1649744596726" expanded="true" signature="14406:14481" ph="SELECT uid \... m_li_fp_users" />
+                <marker date="1649744596726" expanded="true" signature="14406:14482" ph="SELECT uid \... m_li_fp_users" />
+                <marker date="1649744596726" expanded="true" signature="14406:14493" ph="SELECT uid \... m_li_fp_users" />
+                <marker date="1649744596726" expanded="true" signature="14406:14498" ph="SELECT uid \... m_li_fp_users" />
+                <marker date="1649744596726" expanded="true" signature="15293:15367" ph="SELECT typen... m_li_fp_types" />
+                <marker date="1649744596726" expanded="true" signature="15293:15430" ph="SELECT tid \... m_li_fp_types" />
+                <marker date="1649744596726" expanded="true" signature="15293:15432" ph="SELECT tid \... m_li_fp_types" />
+                <marker date="1649744596726" expanded="true" signature="15293:15453" ph="SELECT tid \... m_li_fp_types" />
+                <marker date="1649744596726" expanded="true" signature="16070:16130" ph="INSERT INTO M_Li_fp_types... " />
+                <marker date="1649744596726" expanded="true" signature="16070:16148" ph="INSERT INTO M_Li_fp_types... " />
+                <marker date="1649744596726" expanded="true" signature="16070:16149" ph="INSERT INTO M_Li_fp_types... " />
+                <marker date="1649744596726" expanded="true" signature="16070:16170" ph="INSERT INTO M_Li_fp_types... " />
+                <marker date="1649744596726" expanded="true" signature="16947:17012" ph="DELETE FROM m_li_fp_records... " />
+                <marker date="1649744596726" expanded="true" signature="16958:17012" ph="SELECT typen... m_li_fp_types" />
+                <marker date="1649744596726" expanded="true" signature="17888:17986" ph="INSERT INTO M_Li_fp_records... " />
+                <marker date="1649744596726" expanded="true" signature="19771:19909" ph="UPDATE M_Li_fp_records... " />
               </folding>
             </state>
           </provider>
@@ -275,8 +258,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -300,25 +283,27 @@
         <option value="$PROJECT_DIR$/src/views/IndexView.fxml" />
         <option value="$PROJECT_DIR$/src/models/DBConnect.java" />
         <option value="$PROJECT_DIR$/src/DAO/MD5.java" />
-        <option value="$PROJECT_DIR$/src/application/Main.java" />
         <option value="$PROJECT_DIR$/src/utils/IDValue.java" />
         <option value="$PROJECT_DIR$/src/views/RecordEditDialog.fxml" />
         <option value="$PROJECT_DIR$/src/utils/IDValueUtil.java" />
-        <option value="$PROJECT_DIR$/src/TestDemo.java" />
         <option value="$PROJECT_DIR$/src/utils/DateUtil.java" />
         <option value="$PROJECT_DIR$/src/controllers/Preparation.java" />
         <option value="$PROJECT_DIR$/src/controllers/RecordEditDialogController.java" />
-        <option value="$PROJECT_DIR$/src/controllers/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/controllers/IndexController.java" />
-        <option value="$PROJECT_DIR$/src/DAO/DBConnect.java" />
-        <option value="$PROJECT_DIR$/src/models/RecordFXModel.java" />
         <option value="$PROJECT_DIR$/src/models/TypesModel.java" />
         <option value="$PROJECT_DIR$/src/models/RecordsModel.java" />
-        <option value="$PROJECT_DIR$/src/application/IndexAPP.java" />
         <option value="$PROJECT_DIR$/src/models/LoginModel.java" />
-        <option value="$PROJECT_DIR$/src/models/UsersModel.java" />
         <option value="$PROJECT_DIR$/src/utils/MD5.java" />
+        <option value="$PROJECT_DIR$/src/DAO/DBConnect.java" />
+        <option value="$PROJECT_DIR$/src/models/RecordFXModel.java" />
+        <option value="$PROJECT_DIR$/src/application/Main.java" />
+        <option value="$PROJECT_DIR$/src/TestDemo.java" />
+        <option value="$PROJECT_DIR$/src/models/UsersModel.java" />
+        <option value="$PROJECT_DIR$/src/controllers/IndexController.java" />
         <option value="$PROJECT_DIR$/src/DAO/DaoModel.java" />
+        <option value="$PROJECT_DIR$/src/controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/views/AccountEditDialog.fxml" />
+        <option value="$PROJECT_DIR$/src/application/IndexAPP.java" />
+        <option value="$PROJECT_DIR$/src/controllers/AccountController.java" />
       </list>
     </option>
   </component>
@@ -354,6 +339,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -411,10 +398,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -456,7 +441,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IndexAPP">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -679,12 +664,28 @@
       <workItem from="1649385529834" duration="18745000" />
       <workItem from="1649499094189" duration="8539000" />
       <workItem from="1649567266671" duration="11295000" />
-      <workItem from="1649643404951" duration="10009000" />
+      <workItem from="1649643404951" duration="22811000" />
+      <workItem from="1649730440274" duration="17210000" />
     </task>
+    <task id="LOCAL-00001" summary="1.add edit logic in index page;&#10;2.add comments to each file's title">
+      <created>1649665595516</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649665595516</updated>
+    </task>
+    <task id="LOCAL-00002" summary="finish with the function that login account's name can be passed into index">
+      <created>1649731016450</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649731016450</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74219000" />
+    <option name="totallyTimeSpent" value="104231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -697,20 +698,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24734607" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1640625" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1640625" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997879" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -760,7 +761,8 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="1.add edit logic in index page;&#10;2.add comments to each file's title" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.add edit logic in index page;&#10;2.add comments to each file's title" />
+    <MESSAGE value="finish with the function that login account's name can be passed into index" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish with the function that login account's name can be passed into index" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -773,49 +775,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/models/UsersModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/DBConnect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/MD5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/Preparation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/LoginModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
             <marker date="1649664258135" expanded="true" signature="943:1006" ph="SELECT * FRO... jpapa_users" />
           </folding>
         </state>
@@ -845,26 +812,33 @@
             <element signature="imports" expanded="true" />
             <element signature="e#694#695#0" expanded="true" />
             <element signature="e#760#761#0" expanded="true" />
-            <marker date="1649664735443" expanded="true" signature="1303:1656" ph="CREATE TABLE... IF" />
-            <marker date="1649664735443" expanded="true" signature="1843:2157" ph="CREATE TABLE... IF" />
-            <marker date="1649664735443" expanded="true" signature="2348:2821" ph="CREATE TABLE... IF" />
-            <marker date="1649664735443" expanded="true" signature="3713:3787" ph="INSERT INTO M_Li_fp_users... " />
-            <marker date="1649664735443" expanded="true" signature="5507:5571" ph="INSERT INTO M_Li_fp_types... " />
-            <marker date="1649664735443" expanded="true" signature="7244:7342" ph="INSERT INTO M_Li_tab... " />
-            <marker date="1649664735443" expanded="true" signature="9014:9314" ph="SELECT * fro... M_Li_tab" />
-            <marker date="1649664735443" expanded="true" signature="9996:10070" ph="SELECT usern... m_li_fp_users" />
-            <marker date="1649664735443" expanded="true" signature="9996:10071" ph="SELECT uid \... m_li_fp_users" />
-            <marker date="1649664735443" expanded="true" signature="9996:10072" ph="SELECT uid \... m_li_fp_users" />
-            <marker date="1649664735443" expanded="true" signature="9996:10083" ph="SELECT uid \... m_li_fp_users" />
-            <marker date="1649664735443" expanded="true" signature="9996:10088" ph="SELECT uid \... m_li_fp_users" />
-            <marker date="1649664735443" expanded="true" signature="10883:10957" ph="SELECT typen... m_li_fp_types" />
-            <marker date="1649664735443" expanded="true" signature="10883:11020" ph="SELECT tid \... m_li_fp_types" />
-            <marker date="1649664735443" expanded="true" signature="10883:11022" ph="SELECT tid \... m_li_fp_types" />
-            <marker date="1649664735443" expanded="true" signature="10883:11043" ph="SELECT tid \... m_li_fp_types" />
-            <marker date="1649664735443" expanded="true" signature="12121:12186" ph="DELETE FROM m_li_fp_records... " />
-            <marker date="1649664735443" expanded="true" signature="12132:12186" ph="SELECT typen... m_li_fp_types" />
-            <marker date="1649664735443" expanded="true" signature="13062:13160" ph="INSERT INTO M_Li_fp_records... " />
-            <marker date="1649664735443" expanded="true" signature="14945:15083" ph="UPDATE M_Li_fp_records... " />
+            <marker date="1649744596726" expanded="true" signature="1303:1656" ph="CREATE TABLE... IF" />
+            <marker date="1649744596726" expanded="true" signature="1843:2157" ph="CREATE TABLE... IF" />
+            <marker date="1649744596726" expanded="true" signature="2348:2821" ph="CREATE TABLE... IF" />
+            <marker date="1649744596726" expanded="true" signature="3720:3794" ph="INSERT INTO M_Li_fp_users... " />
+            <marker date="1649744596726" expanded="true" signature="5502:5576" ph="INSERT INTO M_Li_fp_users... " />
+            <marker date="1649744596726" expanded="true" signature="7022:7082" ph="UPDATE M_Li_fp_users... " />
+            <marker date="1649744596726" expanded="true" signature="8470:8516" ph="DELETE FROM M_Li_fp_users... " />
+            <marker date="1649744596726" expanded="true" signature="9917:9981" ph="INSERT INTO M_Li_fp_types... " />
+            <marker date="1649744596726" expanded="true" signature="11654:11752" ph="INSERT INTO M_Li_tab... " />
+            <marker date="1649744596726" expanded="true" signature="13424:13724" ph="SELECT * fro... M_Li_tab" />
+            <marker date="1649744596726" expanded="true" signature="14406:14480" ph="SELECT usern... m_li_fp_users" />
+            <marker date="1649744596726" expanded="true" signature="14406:14481" ph="SELECT uid \... m_li_fp_users" />
+            <marker date="1649744596726" expanded="true" signature="14406:14482" ph="SELECT uid \... m_li_fp_users" />
+            <marker date="1649744596726" expanded="true" signature="14406:14493" ph="SELECT uid \... m_li_fp_users" />
+            <marker date="1649744596726" expanded="true" signature="14406:14498" ph="SELECT uid \... m_li_fp_users" />
+            <marker date="1649744596726" expanded="true" signature="15293:15367" ph="SELECT typen... m_li_fp_types" />
+            <marker date="1649744596726" expanded="true" signature="15293:15430" ph="SELECT tid \... m_li_fp_types" />
+            <marker date="1649744596726" expanded="true" signature="15293:15432" ph="SELECT tid \... m_li_fp_types" />
+            <marker date="1649744596726" expanded="true" signature="15293:15453" ph="SELECT tid \... m_li_fp_types" />
+            <marker date="1649744596726" expanded="true" signature="16070:16130" ph="INSERT INTO M_Li_fp_types... " />
+            <marker date="1649744596726" expanded="true" signature="16070:16148" ph="INSERT INTO M_Li_fp_types... " />
+            <marker date="1649744596726" expanded="true" signature="16070:16149" ph="INSERT INTO M_Li_fp_types... " />
+            <marker date="1649744596726" expanded="true" signature="16070:16170" ph="INSERT INTO M_Li_fp_types... " />
+            <marker date="1649744596726" expanded="true" signature="16947:17012" ph="DELETE FROM m_li_fp_records... " />
+            <marker date="1649744596726" expanded="true" signature="16958:17012" ph="SELECT typen... m_li_fp_types" />
+            <marker date="1649744596726" expanded="true" signature="17888:17986" ph="INSERT INTO M_Li_fp_records... " />
+            <marker date="1649744596726" expanded="true" signature="19771:19909" ph="UPDATE M_Li_fp_records... " />
           </folding>
         </state>
       </provider>
@@ -874,7 +848,7 @@
         <state relative-caret-position="312">
           <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -902,7 +876,10 @@
         <state relative-caret-position="52">
           <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
           <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="e#2961#2962#0" expanded="true" />
+            <element signature="e#3005#3006#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -912,16 +889,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#2622#2623#0" expanded="true" />
-            <element signature="e#2649#2650#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#2634#2635#0" expanded="true" />
+            <element signature="e#2661#2662#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/IndexViewAdmin.fxml">
+    <entry file="file://$PROJECT_DIR$/src/views/IndexView.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
@@ -937,7 +915,7 @@
         <state relative-caret-position="312">
           <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -965,7 +943,10 @@
         <state relative-caret-position="52">
           <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
           <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="e#2961#2962#0" expanded="true" />
+            <element signature="e#3005#3006#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -975,16 +956,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#2622#2623#0" expanded="true" />
-            <element signature="e#2649#2650#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#2634#2635#0" expanded="true" />
+            <element signature="e#2661#2662#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/IndexViewAdmin.fxml">
+    <entry file="file://$PROJECT_DIR$/src/views/IndexView.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
@@ -1000,7 +982,7 @@
         <state relative-caret-position="104">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1013,17 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/IndexViewAdmin.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="82" column="71" lean-forward="true" selection-start-line="82" selection-start-column="71" selection-end-line="82" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,32 +1024,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_261/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="2234" column="17" lean-forward="false" selection-start-line="2234" selection-start-column="17" selection-end-line="2234" selection-end-column="17" />
-          <folding>
-            <element signature="e#83880#83881#0" expanded="false" />
-            <element signature="e#83916#83917#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_261/src.zip!/java/time/LocalDateTime.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="134" column="19" lean-forward="false" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1112,22 +1062,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/IDValueUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="25" column="54" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/IDValueUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/utils/DateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-546">
@@ -1143,47 +1078,6 @@
         <state relative-caret-position="78">
           <caret line="3" column="53" lean-forward="false" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#2622#2623#0" expanded="true" />
-            <element signature="e#2649#2650#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/DBConnect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/RecordEditDialogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1444#1445#0" expanded="true" />
-            <element signature="e#1490#1491#0" expanded="true" />
-            <element signature="e#2217#2218#0" expanded="true" />
-            <element signature="e#2249#2250#0" expanded="true" />
-            <element signature="e#2984#2985#0" expanded="true" />
-            <element signature="e#3019#3020#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1210,53 +1104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/IndexAPP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#2583#2584#0" expanded="true" />
-            <element signature="e#2617#2618#0" expanded="true" />
-            <element signature="e#3812#3813#0" expanded="true" />
-            <element signature="e#3847#3848#0" expanded="true" />
-            <element signature="e#5388#5389#0" expanded="true" />
-            <element signature="e#5416#5417#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/LoginModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="91" lean-forward="false" selection-start-line="4" selection-start-column="91" selection-end-line="4" selection-end-column="91" />
-          <folding>
-            <marker date="1649664258135" expanded="true" signature="943:1006" ph="SELECT * FRO... jpapa_users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/UsersModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/MD5.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -1268,94 +1115,294 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/DBConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/RecordFXModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="910">
+          <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#2125#2126#0" expanded="true" />
-            <element signature="e#2162#2163#0" expanded="true" />
-            <element signature="e#2210#2211#0" expanded="true" />
-            <element signature="e#2241#2242#0" expanded="true" />
-            <element signature="e#2289#2290#0" expanded="true" />
-            <element signature="e#2332#2333#0" expanded="true" />
-            <element signature="e#2362#2363#0" expanded="true" />
-            <element signature="e#2394#2395#0" expanded="true" />
-            <element signature="e#2437#2438#0" expanded="true" />
-            <element signature="e#2463#2464#0" expanded="true" />
-            <element signature="e#2501#2502#0" expanded="true" />
-            <element signature="e#2534#2535#0" expanded="true" />
-            <element signature="e#2572#2573#0" expanded="true" />
-            <element signature="e#2612#2613#0" expanded="true" />
-            <element signature="e#2663#2664#0" expanded="true" />
-            <element signature="e#2697#2698#0" expanded="true" />
-            <element signature="e#2751#2752#0" expanded="true" />
-            <element signature="e#2800#2801#0" expanded="true" />
-            <element signature="e#2833#2834#0" expanded="true" />
-            <element signature="e#2868#2869#0" expanded="true" />
-            <element signature="e#2914#2915#0" expanded="true" />
-            <element signature="e#2943#2944#0" expanded="true" />
-            <element signature="e#2987#2988#0" expanded="true" />
-            <element signature="e#3026#3027#0" expanded="true" />
-            <element signature="e#3057#3058#0" expanded="true" />
-            <element signature="e#3090#3091#0" expanded="true" />
-            <element signature="e#3134#3135#0" expanded="true" />
-            <element signature="e#3161#3162#0" expanded="true" />
-            <element signature="e#3201#3202#0" expanded="true" />
-            <element signature="e#3236#3237#0" expanded="true" />
-            <element signature="e#3270#3271#0" expanded="true" />
-            <element signature="e#3306#3307#0" expanded="true" />
-            <element signature="e#3353#3354#0" expanded="true" />
-            <element signature="e#3383#3384#0" expanded="true" />
-            <element signature="e#3429#3430#0" expanded="true" />
-            <element signature="e#3470#3471#0" expanded="true" />
-            <element signature="e#3501#3502#0" expanded="true" />
-            <element signature="e#3534#3535#0" expanded="true" />
-            <element signature="e#3578#3579#0" expanded="true" />
-            <element signature="e#3605#3606#0" expanded="true" />
-            <element signature="e#3645#3646#0" expanded="true" />
-            <element signature="e#3680#3681#0" expanded="true" />
-            <element signature="e#3718#3719#0" expanded="true" />
-            <element signature="e#3751#3752#0" expanded="true" />
-            <element signature="e#3810#3811#0" expanded="true" />
-            <element signature="e#3837#3838#0" expanded="true" />
-            <element signature="e#3884#3885#0" expanded="true" />
-            <element signature="e#3919#3920#0" expanded="true" />
+            <element signature="e#2205#2206#0" expanded="true" />
+            <element signature="e#2242#2243#0" expanded="true" />
+            <element signature="e#2290#2291#0" expanded="true" />
+            <element signature="e#2321#2322#0" expanded="true" />
+            <element signature="e#2369#2370#0" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+            <element signature="e#2442#2443#0" expanded="true" />
+            <element signature="e#2474#2475#0" expanded="true" />
+            <element signature="e#2517#2518#0" expanded="true" />
+            <element signature="e#2543#2544#0" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2614#2615#0" expanded="true" />
+            <element signature="e#2652#2653#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2743#2744#0" expanded="true" />
+            <element signature="e#2777#2778#0" expanded="true" />
+            <element signature="e#2831#2832#0" expanded="true" />
+            <element signature="e#2880#2881#0" expanded="true" />
+            <element signature="e#2913#2914#0" expanded="true" />
+            <element signature="e#2948#2949#0" expanded="true" />
+            <element signature="e#2994#2995#0" expanded="true" />
+            <element signature="e#3023#3024#0" expanded="true" />
+            <element signature="e#3067#3068#0" expanded="true" />
+            <element signature="e#3106#3107#0" expanded="true" />
+            <element signature="e#3137#3138#0" expanded="true" />
+            <element signature="e#3170#3171#0" expanded="true" />
+            <element signature="e#3214#3215#0" expanded="true" />
+            <element signature="e#3241#3242#0" expanded="true" />
+            <element signature="e#3281#3282#0" expanded="true" />
+            <element signature="e#3316#3317#0" expanded="true" />
+            <element signature="e#3350#3351#0" expanded="true" />
+            <element signature="e#3386#3387#0" expanded="true" />
+            <element signature="e#3433#3434#0" expanded="true" />
+            <element signature="e#3463#3464#0" expanded="true" />
+            <element signature="e#3509#3510#0" expanded="true" />
+            <element signature="e#3550#3551#0" expanded="true" />
+            <element signature="e#3581#3582#0" expanded="true" />
+            <element signature="e#3614#3615#0" expanded="true" />
+            <element signature="e#3658#3659#0" expanded="true" />
+            <element signature="e#3685#3686#0" expanded="true" />
+            <element signature="e#3725#3726#0" expanded="true" />
+            <element signature="e#3760#3761#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3831#3832#0" expanded="true" />
+            <element signature="e#3890#3891#0" expanded="true" />
+            <element signature="e#3917#3918#0" expanded="true" />
+            <element signature="e#3964#3965#0" expanded="true" />
+            <element signature="e#3999#4000#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/LoginModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <marker date="1649664258135" expanded="true" signature="943:1006" ph="SELECT * FRO... jpapa_users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DAO/DaoModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="302" column="47" lean-forward="true" selection-start-line="302" selection-start-column="47" selection-end-line="302" selection-end-column="47" />
+        <state relative-caret-position="-278">
+          <caret line="191" column="31" lean-forward="true" selection-start-line="191" selection-start-column="31" selection-end-line="191" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#694#695#0" expanded="true" />
             <element signature="e#760#761#0" expanded="true" />
-            <marker date="1649664735443" expanded="true" signature="1303:1656" ph="CREATE TABLE... IF" />
-            <marker date="1649664735443" expanded="true" signature="1843:2157" ph="CREATE TABLE... IF" />
-            <marker date="1649664735443" expanded="true" signature="2348:2821" ph="CREATE TABLE... IF" />
-            <marker date="1649664735443" expanded="true" signature="3713:3787" ph="INSERT INTO M_Li_fp_users... " />
-            <marker date="1649664735443" expanded="true" signature="5507:5571" ph="INSERT INTO M_Li_fp_types... " />
-            <marker date="1649664735443" expanded="true" signature="7244:7342" ph="INSERT INTO M_Li_tab... " />
-            <marker date="1649664735443" expanded="true" signature="9014:9314" ph="SELECT * fro... M_Li_tab" />
-            <marker date="1649664735443" expanded="true" signature="9996:10070" ph="SELECT usern... m_li_fp_users" />
-            <marker date="1649664735443" expanded="true" signature="9996:10071" ph="SELECT uid \... m_li_fp_users" />
-            <marker date="1649664735443" expanded="true" signature="9996:10072" ph="SELECT uid \... m_li_fp_users" />
-            <marker date="1649664735443" expanded="true" signature="9996:10083" ph="SELECT uid \... m_li_fp_users" />
-            <marker date="1649664735443" expanded="true" signature="9996:10088" ph="SELECT uid \... m_li_fp_users" />
-            <marker date="1649664735443" expanded="true" signature="10883:10957" ph="SELECT typen... m_li_fp_types" />
-            <marker date="1649664735443" expanded="true" signature="10883:11020" ph="SELECT tid \... m_li_fp_types" />
-            <marker date="1649664735443" expanded="true" signature="10883:11022" ph="SELECT tid \... m_li_fp_types" />
-            <marker date="1649664735443" expanded="true" signature="10883:11043" ph="SELECT tid \... m_li_fp_types" />
-            <marker date="1649664735443" expanded="true" signature="12121:12186" ph="DELETE FROM m_li_fp_records... " />
-            <marker date="1649664735443" expanded="true" signature="12132:12186" ph="SELECT typen... m_li_fp_types" />
-            <marker date="1649664735443" expanded="true" signature="13062:13160" ph="INSERT INTO M_Li_fp_records... " />
-            <marker date="1649664735443" expanded="true" signature="14945:15083" ph="UPDATE M_Li_fp_records... " />
+            <marker date="1649744596726" expanded="true" signature="1303:1656" ph="CREATE TABLE... IF" />
+            <marker date="1649744596726" expanded="true" signature="1843:2157" ph="CREATE TABLE... IF" />
+            <marker date="1649744596726" expanded="true" signature="2348:2821" ph="CREATE TABLE... IF" />
+            <marker date="1649744596726" expanded="true" signature="3720:3794" ph="INSERT INTO M_Li_fp_users... " />
+            <marker date="1649744596726" expanded="true" signature="5502:5576" ph="INSERT INTO M_Li_fp_users... " />
+            <marker date="1649744596726" expanded="true" signature="7022:7082" ph="UPDATE M_Li_fp_users... " />
+            <marker date="1649744596726" expanded="true" signature="8470:8516" ph="DELETE FROM M_Li_fp_users... " />
+            <marker date="1649744596726" expanded="true" signature="9917:9981" ph="INSERT INTO M_Li_fp_types... " />
+            <marker date="1649744596726" expanded="true" signature="11654:11752" ph="INSERT INTO M_Li_tab... " />
+            <marker date="1649744596726" expanded="true" signature="13424:13724" ph="SELECT * fro... M_Li_tab" />
+            <marker date="1649744596726" expanded="true" signature="14406:14480" ph="SELECT usern... m_li_fp_users" />
+            <marker date="1649744596726" expanded="true" signature="14406:14481" ph="SELECT uid \... m_li_fp_users" />
+            <marker date="1649744596726" expanded="true" signature="14406:14482" ph="SELECT uid \... m_li_fp_users" />
+            <marker date="1649744596726" expanded="true" signature="14406:14493" ph="SELECT uid \... m_li_fp_users" />
+            <marker date="1649744596726" expanded="true" signature="14406:14498" ph="SELECT uid \... m_li_fp_users" />
+            <marker date="1649744596726" expanded="true" signature="15293:15367" ph="SELECT typen... m_li_fp_types" />
+            <marker date="1649744596726" expanded="true" signature="15293:15430" ph="SELECT tid \... m_li_fp_types" />
+            <marker date="1649744596726" expanded="true" signature="15293:15432" ph="SELECT tid \... m_li_fp_types" />
+            <marker date="1649744596726" expanded="true" signature="15293:15453" ph="SELECT tid \... m_li_fp_types" />
+            <marker date="1649744596726" expanded="true" signature="16070:16130" ph="INSERT INTO M_Li_fp_types... " />
+            <marker date="1649744596726" expanded="true" signature="16070:16148" ph="INSERT INTO M_Li_fp_types... " />
+            <marker date="1649744596726" expanded="true" signature="16070:16149" ph="INSERT INTO M_Li_fp_types... " />
+            <marker date="1649744596726" expanded="true" signature="16070:16170" ph="INSERT INTO M_Li_fp_types... " />
+            <marker date="1649744596726" expanded="true" signature="16947:17012" ph="DELETE FROM m_li_fp_records... " />
+            <marker date="1649744596726" expanded="true" signature="16958:17012" ph="SELECT typen... m_li_fp_types" />
+            <marker date="1649744596726" expanded="true" signature="17888:17986" ph="INSERT INTO M_Li_fp_records... " />
+            <marker date="1649744596726" expanded="true" signature="19771:19909" ph="UPDATE M_Li_fp_records... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="87" column="32" lean-forward="false" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#2634#2635#0" expanded="true" />
+            <element signature="e#2661#2662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/IndexView.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2132">
+          <caret line="82" column="67" lean-forward="true" selection-start-line="82" selection-start-column="67" selection-end-line="82" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/FinalProject/views/AccountEditDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/AccountEditDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="97" lean-forward="true" selection-start-line="10" selection-start-column="97" selection-end-line="10" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_261/javafx-src.zip!/javafx/beans/value/ChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="62" column="9" lean-forward="false" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="49" column="41" lean-forward="false" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_261/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="2234" column="17" lean-forward="false" selection-start-line="2234" selection-start-column="17" selection-end-line="2234" selection-end-column="17" />
+          <folding>
+            <element signature="e#83880#83881#0" expanded="true" />
+            <element signature="e#83916#83917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/IndexAPP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="181" column="20" lean-forward="true" selection-start-line="181" selection-start-column="20" selection-end-line="181" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2671#2672#0" expanded="true" />
+            <element signature="e#2705#2706#0" expanded="true" />
+            <element signature="e#3761#3762#0" expanded="true" />
+            <element signature="e#3796#3797#0" expanded="true" />
+            <element signature="e#7111#7112#0" expanded="true" />
+            <element signature="e#7142#7143#0" expanded="true" />
+            <element signature="e#7190#7191#0" expanded="true" />
+            <element signature="e#7230#7231#0" expanded="true" />
+            <element signature="e#7264#7265#0" expanded="true" />
+            <element signature="e#7294#7295#0" expanded="true" />
+            <element signature="e#7341#7342#0" expanded="true" />
+            <element signature="e#7379#7380#0" expanded="true" />
+            <element signature="e#7425#7426#0" expanded="true" />
+            <element signature="e#7453#7454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/UsersModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1014">
+          <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+          <folding>
+            <element signature="e#1295#1296#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1628#1629#0" expanded="true" />
+            <element signature="e#2607#2608#0" expanded="true" />
+            <element signature="e#2639#2640#0" expanded="true" />
+            <element signature="e#3186#3187#0" expanded="true" />
+            <element signature="e#3221#3222#0" expanded="true" />
+            <element signature="e#4163#4164#0" expanded="true" />
+            <element signature="e#4190#4191#0" expanded="true" />
+            <element signature="e#4234#4235#0" expanded="true" />
+            <element signature="e#4266#4267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="251" column="52" lean-forward="false" selection-start-line="251" selection-start-column="52" selection-end-line="251" selection-end-column="52" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2961#2962#0" expanded="true" />
+            <element signature="e#3005#3006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/RecordEditDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1835">
+          <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1444#1445#0" expanded="true" />
+            <element signature="e#1490#1491#0" expanded="true" />
+            <element signature="e#2217#2218#0" expanded="true" />
+            <element signature="e#2249#2250#0" expanded="true" />
+            <element signature="e#2984#2985#0" expanded="true" />
+            <element signature="e#3019#3020#0" expanded="true" />
           </folding>
         </state>
       </provider>

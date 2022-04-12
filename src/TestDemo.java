@@ -8,13 +8,6 @@ public class TestDemo {
 //        System.out.println(i);
 //        System.out.println(j);
 
-        int a = 7;
-        if (a > 4){
-            System.out.println(">4");
-        }else if (a > 6) {
-            System.out.println(">6");
-        }else{
-            System.out.println(0);
-        }
+
     }
 }
