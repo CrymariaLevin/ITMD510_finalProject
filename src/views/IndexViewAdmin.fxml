@@ -58,6 +58,8 @@
                               <Button layoutX="108.0" layoutY="22.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="97.0" text="Del member" />
                            </children>
                         </Pane>
+                        <Label fx:id="lblUsername" layoutX="43.0" layoutY="368.0" text="Label" />
+                        <Label layoutX="22.0" layoutY="339.0" text="Login User：" />
                      </children>
                   </AnchorPane>
                   <GridPane layoutX="14.0" layoutY="42.0" prefWidth="252.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="42.0">

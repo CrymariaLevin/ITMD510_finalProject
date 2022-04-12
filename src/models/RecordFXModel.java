@@ -36,9 +36,13 @@ public class RecordFXModel {
     /**
      * Constructor with some initial data.
      *
+     * @param rid
      * @param date
      * @param transaction
-     * @param amount
+     * @param location
+     * @param account
+     * @param type
+     * @param memo
      */
     public RecordFXModel(String rid, LocalDateTime date, String transaction, Double amount, String location, String account, String type, String memo) {
 //        this.rid = new SimpleIntegerProperty(rid);

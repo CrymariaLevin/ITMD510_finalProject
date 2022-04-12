@@ -11,12 +11,18 @@ import application.IndexAPP;
 import application.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import models.LoginModel;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class LoginController {
 
@@ -30,6 +36,8 @@ public class LoginController {
 	private Label lblError;
 
     private LoginModel model;
+	private Main mainApp;
+//    private String account_name;
 
 
 	public LoginController() {
@@ -73,8 +81,13 @@ public class LoginController {
 				// If user is admin, inflate admin view
 //				root = (AnchorPane)  FXMLLoader.load(getClass().getResource("/views/IndexViewAdmin.fxml"));
 //				Main.stage.setTitle("Admin View");
-				IndexAPP indexAPP = new IndexAPP();
-				indexAPP.start(Main.stage);
+
+//				IndexAPP indexAPP = new IndexAPP();
+//				indexAPP.start(Main.stage);
+
+//				System.out.println("is admin");
+				new Main().showIndexScene(username);
+
 			} else {
 				// If user is customer, inflate customer view
 				root = (AnchorPane) FXMLLoader.load(getClass().getResource("/views/IndexViewClient.fxml"));

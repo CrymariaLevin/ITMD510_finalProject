@@ -31,6 +31,7 @@ public class IndexAPP extends Application {
 
     private Stage primaryStage; // set global stage object!!!
     private BorderPane rootLayout;
+    private String username;
 
     private ObservableList<RecordFXModel> recordsData = FXCollections.observableArrayList();
 
@@ -43,7 +44,6 @@ public class IndexAPP extends Application {
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
 
-//        System.out.println("init complete");
         showIndexView();
     }
 
@@ -84,9 +84,6 @@ public class IndexAPP extends Application {
     public void showIndexView() {
         try {
             // Load index overview.
-//            FXMLLoader loader = new FXMLLoader();
-//            loader.setLocation(IndexAPP.class.getResource("/views/IndexViewAdmin.fxml"));
-//            AnchorPane indexView = (AnchorPane) loader.load();
 
             FXMLLoader loader = new FXMLLoader(IndexAPP.class.getResource("/views/IndexViewAdmin.fxml"));
             AnchorPane indexView = (AnchorPane) loader.load();
@@ -96,11 +93,9 @@ public class IndexAPP extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
 
-            // Set person overview into the center of root layout.
-//            rootLayout.setCenter(indexView);
-
             // Give the controller access to the main app.
             IndexController controller = loader.getController();
+            controller.setUsername(username);
             controller.setIndexAPP(this);
 
         } catch (IOException e) {
@@ -150,6 +145,14 @@ public class IndexAPP extends Application {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public static void main(String[] args) {

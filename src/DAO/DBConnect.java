@@ -17,6 +17,7 @@ public class DBConnect {
 //    // Database credentials
 //    static final String USER = "fp510", PASS = "510";
 
+//    Test in local environment
     static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/itmd?autoReconnect=true&useServerPrepStmts=true&useSSL=false&serverTimezone=UTC";
     static final String USER = "root", PASS = "580225";
 

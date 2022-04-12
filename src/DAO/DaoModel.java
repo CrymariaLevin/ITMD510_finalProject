@@ -278,14 +278,20 @@ public class DaoModel {
                     " and `TRANSACTION` =  '" + transaction + "'";
 //            System.out.println(sql);
             ResultSet rs = stmt.executeQuery(sql);
-            if (rs.next()) {
+            // must assign the rs.next() value into a new variable, if use rs.next() directly, the cursor will be next record, cause if judge wrong
+            boolean flag = rs.next();
+            System.out.println(flag);
+            if (flag) {
                 tid = rs.getInt("tid");
+//                System.out.println("tid: " + tid);
 //                create new type
-            }else if((transaction == "Expense" || transaction == "Income") && typename.length() > 0){
-                ArrayList<TypesModel> new_type = new ArrayList<>();
-                new_type.add(new TypesModel(typename,transaction));
-                insertTypes(new_type);
-                tid = retrieveTypeID(typename,transaction);
+            }else if((transaction.equals("Expense") || transaction.equals("Income")) && typename.length() > 0){
+                String sql_insert = "INSERT INTO M_Li_fp_types (`typename`,`transaction`)VALUES ('" + typename +"', '" + transaction +"')";
+//                System.out.println(sql_insert);
+                stmt.executeUpdate(sql_insert);
+                stmt.close();
+                conn.connect().close();
+                return retrieveTypeID(typename,transaction);
             }
             else{
                 tid = -1;

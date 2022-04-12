@@ -13,6 +13,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.stage.Stage;
 import models.RecordFXModel;
 import utils.DateUtil;
 
@@ -50,11 +51,16 @@ public class IndexController {
     @FXML
     private Label lblMemo;
 
+    @FXML
+    private Label lblUsername;
+
 
     private String rid;
+    private String username;
 
     // Reference to the index application.
     private IndexAPP indexApp;
+    private Stage indexStage;
 
     public IndexController() {
     }
@@ -72,6 +78,8 @@ public class IndexController {
         // Clear person details.
         showRecordDetails(null);
 
+        lblUsername.setText(username);
+
         // Listen for selection changes and show the record details when changed.
         recordsTable.getSelectionModel().selectedItemProperty().addListener(
                 (observable, oldValue, newValue) -> showRecordDetails(newValue));
@@ -85,6 +93,26 @@ public class IndexController {
 
         // Add observable list data to the table
         recordsTable.setItems(indexApp.getRecordsData());
+        this.username = indexApp.getUsername();
+    }
+
+    /**
+     * Sets the stage of this page.
+     *
+     * @param indexStage
+     */
+    public void setIndexStage(Stage indexStage) {
+        this.indexStage = indexStage;
+    }
+
+    /**
+     * Gets the username login to the page.
+     *
+     * @param account
+     */
+    public void setUsername(String account) {
+        this.username = account;
+        lblUsername.setText(account);
     }
 
     /**
