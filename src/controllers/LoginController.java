@@ -20,8 +20,6 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import models.LoginModel;
 
-import java.util.HashMap;
-import java.util.Map;
 
 public class LoginController {
 

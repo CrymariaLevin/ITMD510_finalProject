@@ -7,6 +7,7 @@
 
 package controllers;
 
+import DAO.DaoModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -118,8 +119,11 @@ public class RecordEditDialogController {
     private boolean isInputValid() {
         String errorMessage = "";
 
-        String account_list[] = {"Husband","Wife"};
-        ArrayList<String> account_arrays=new ArrayList<>(Arrays.asList(account_list));
+//        String account_list[] = {"Husband","Wife"};
+//        ArrayList<String> account_arrays=new ArrayList<>(Arrays.asList(account_list));
+//        get the account list
+        DaoModel dao = new DaoModel();
+        ArrayList<String> account_arrays = dao.retrieveAccountList();
 
         String transaction_list[] = {"Income","Expense"};
         ArrayList<String> transaction_arrays=new ArrayList<>(Arrays.asList(transaction_list));

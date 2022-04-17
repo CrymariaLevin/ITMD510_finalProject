@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="371.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RecordEditDialogController">
+<AnchorPane prefHeight="371.0" prefWidth="487.0" styleClass="background" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RecordEditDialogController">
    <children>
       <GridPane layoutX="51.0" layoutY="20.0" prefHeight="255.0" prefWidth="360.0">
         <columnConstraints>
@@ -42,10 +42,10 @@
             <TextField fx:id="typeField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
-      <HBox layoutX="188.0" layoutY="327.0" prefHeight="37.0" prefWidth="172.0" spacing="20.0">
+      <HBox layoutX="171.0" layoutY="327.0" prefHeight="37.0" prefWidth="189.0" spacing="20.0">
          <children>
             <Button mnemonicParsing="false" onAction="#handleOk" prefHeight="37.0" prefWidth="75.0" text="OK" textAlignment="CENTER" />
-            <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="37.0" prefWidth="75.0" text="Cancel" />
+            <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="37.0" prefWidth="92.0" text="Cancel" />
          </children>
       </HBox>
       <Label fx:id="lblError" layoutX="47.0" layoutY="275.0" prefHeight="52.0" prefWidth="424.0" textAlignment="CENTER" />

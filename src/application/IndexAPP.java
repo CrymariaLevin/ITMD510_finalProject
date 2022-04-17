@@ -33,7 +33,7 @@ public class IndexAPP extends Application {
 
     private Stage primaryStage; // set global stage object!!!
     private BorderPane rootLayout;
-    private String username;
+    public static String username;
     private boolean visible;
 
     private ObservableList<RecordFXModel> recordsData = FXCollections.observableArrayList();

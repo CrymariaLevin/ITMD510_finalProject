@@ -11,6 +11,12 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 
 public class MD5 {
+    /**
+     * Get encrypted str in MD5 encryption
+     *
+     * @param str the String needed to be encrypted
+     * @return String the encrypted str
+     */
     public static String getMD5String(String str) {
         try {
             // create MessageDigest object

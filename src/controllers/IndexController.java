@@ -10,6 +10,7 @@ package controllers;
 import DAO.DaoModel;
 import application.IndexAPP;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -60,7 +61,7 @@ public class IndexController {
 
 
     private String rid;
-    private String username;
+    static String username;
     private boolean visible;
 
     // Reference to the index application.
@@ -75,12 +76,12 @@ public class IndexController {
      */
     @FXML
     private void initialize() {
-        // Initialize the person table with the 3 columns.
+        // Initialize the record table with the 3 columns.
         dateColumn.setCellValueFactory(cellData -> cellData.getValue().dateProperty());
         transColumn.setCellValueFactory(cellData -> cellData.getValue().transactionProperty());
         amountColumn.setCellValueFactory(cellData -> cellData.getValue().amountProperty());
 
-        // Clear person details.
+        // Clear record details.
         showRecordDetails(null);
 
         lblUsername.setText(username);
@@ -101,6 +102,7 @@ public class IndexController {
         recordsTable.setItems(indexApp.getRecordsData());
         this.username = indexApp.getUsername();
         this.visible = indexApp.isVisible();
+        loginAlert();
     }
 
     /**
@@ -140,7 +142,7 @@ public class IndexController {
      */
     private void showRecordDetails(RecordFXModel recordfx) {
         if (recordfx != null) {
-            // Fill the labels with info from the person object.
+            // Fill the labels with info from the record object.
             lblDate.setText(DateUtil.format(recordfx.getDate()));
 //            lblAccount.setText(IDValueUtil.conver_uid(recordfx.getUid()));
 //            lblType.setText(IDValueUtil.conver_tid(recordfx.getTid()));
@@ -163,6 +165,18 @@ public class IndexController {
             lblAmount.setText("");
             lblMemo.setText("");
         }
+    }
+
+    /**
+     * Called when the user login.
+     * Show welcome information
+     */
+    public void loginAlert(){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Login Welcome");
+        alert.setHeaderText("Family User - " + username);
+        alert.setContentText("Welcome !");
+        alert.showAndWait();
     }
 
     /**

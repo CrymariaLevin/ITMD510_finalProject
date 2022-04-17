@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccountController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccountController">
    <children>
       <Pane fx:id="panePwd" layoutX="132.0" layoutY="222.0" prefHeight="79.0" prefWidth="338.0">
          <children>
-            <Label layoutX="89.0" layoutY="5.0" text="Password">
+            <Label layoutX="89.0" layoutY="6.0" text="Password">
                <font>
                   <Font size="14.0" />
                </font>
@@ -23,15 +23,15 @@
       </Pane>
       <Pane fx:id="panePriv" layoutX="132.0" layoutY="165.0" prefHeight="71.0" prefWidth="338.0">
          <children>
-            <Label layoutX="91.0" layoutY="3.0" text="Privilege">
+            <Label layoutX="91.0" layoutY="6.0" text="Privilege">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ChoiceBox fx:id="privField" layoutX="89.0" layoutY="24.0" prefHeight="23.0" prefWidth="161.0" />
+            <ChoiceBox fx:id="privField" layoutX="89.0" layoutY="27.0" prefHeight="31.0" prefWidth="203.0" />
          </children>
       </Pane>
-      <Label layoutX="215.0" layoutY="28.0" text="Account Edit" textAlignment="CENTER">
+      <Label layoutX="215.0" layoutY="28.0" styleClass="label-header" text="Account Edit" textAlignment="CENTER">
          <font>
             <Font size="28.0" />
          </font>
@@ -42,10 +42,10 @@
          </font>
       </Label>
       <TextField fx:id="usernameField" layoutX="220.0" layoutY="136.0" />
-      <Label fx:id="lblMessage" layoutX="220.0" layoutY="301.0" prefHeight="15.0" prefWidth="161.0" />
-      <Button layoutX="227.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="23.0" prefWidth="55.0" text="OK" />
+      <Label fx:id="lblMessage" layoutX="148.0" layoutY="292.0" prefHeight="31.0" prefWidth="360.0" textAlignment="CENTER" />
+      <Button layoutX="227.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="33.0" prefWidth="85.0" text="OK" />
       <Button layoutX="326.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
       <Label layoutX="221.0" layoutY="83.0" text="Operation:" />
-      <Label fx:id="lblOperation" layoutX="300.0" layoutY="83.0" prefHeight="15.0" prefWidth="98.0" text="Label" />
+      <Label fx:id="lblOperation" layoutX="300.0" layoutY="83.0" prefHeight="21.0" prefWidth="144.0" text="Label" />
    </children>
 </AnchorPane>

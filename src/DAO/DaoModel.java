@@ -62,15 +62,15 @@ public class DaoModel {
             System.out.println("Created table M_Li_fp_types successfully");
 
             // create table records
-            String sql_record = "CREATE TABLE IF NOT EXISTS M_Li_fp_records (" + // yourFirstinitial_First4LettersOfYourLastName_tab ]
-                    " rid INTEGER not NULL AUTO_INCREMENT, " +
-                    " date datetime, " +
-                    " amount numeric(8,2), " +
-                    " location VARCHAR(50), " +
-                    " memo VARCHAR(50), " +
-                    " tid INTEGER(10), " +
-                    " uid INTEGER(10), " +
-                    " PRIMARY KEY ( rid ))";
+            String sql_record = "CREATE TABLE IF NOT EXISTS M_Li_fp_records (\n" +
+                    "rid INTEGER not NULL AUTO_INCREMENT,\n" +
+                    "date datetime,  amount numeric(8,2), location VARCHAR(50), \n" +
+                    "memo VARCHAR(50), tid INTEGER(10), uid INTEGER(10), \n" +
+                    "PRIMARY KEY ( rid ),\n" +
+                    "KEY `typid` (`tid`),\n" +
+                    "KEY `userid` (`uid`),\n" +
+                    "CONSTRAINT `typid` FOREIGN KEY (`tid`) REFERENCES `m_li_fp_types` (`tid`) ON DELETE RESTRICT ON UPDATE CASCADE,\n" +
+                    "CONSTRAINT `userid` FOREIGN KEY (`uid`) REFERENCES `m_li_fp_users` (`uid`) ON DELETE CASCADE ON UPDATE CASCADE)";
             stmt.executeUpdate(sql_record);
             System.out.println("Created table M_Li_fp_records successfully");
             stmt.close();
@@ -204,7 +204,7 @@ public class DaoModel {
         try {
             Connection connection = conn.connect();
             // start a query process
-            System.out.println("Deleting user into the table M_Li_fp_users...");
+            System.out.println("Deleting user from the table M_Li_fp_users...");
 //            using affairs with rollbacks and commits
             connection.setAutoCommit(false);
             // The SQL string used to insert into database table
@@ -212,8 +212,7 @@ public class DaoModel {
 //            using prepared statements when inserting records
             pstmt = connection.prepareStatement(sql);
             // insert data into database table
-            pstmt.setString(2, user.getUsername());
-            pstmt.setInt(1, user.getIs_admin());
+            pstmt.setString(1, user.getUsername());
             pstmt.executeUpdate();
             try {
                 connection.commit();
@@ -342,6 +341,33 @@ public class DaoModel {
     }
 
     /**
+     * Get username list in database for validation
+     *
+     * @param
+     * @return the account name list
+     */
+    public ArrayList<String> retrieveAccountList() {
+        ResultSet rs = null;
+        ArrayList<String> username_array = new ArrayList<>();
+        try {
+            stmt = conn.connect().createStatement();
+            String sql = "SELECT username \n" +
+                    "FROM m_li_fp_users";
+            rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+                String username = rs.getString("username");
+                username_array.add(username);
+            }
+            stmt.close();
+            conn.connect().close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return username_array;
+    }
+
+    /**
      * Get uid by username in database
      *
      * Returns -1 if the String could not be converted.
@@ -389,7 +415,7 @@ public class DaoModel {
             ResultSet rs = stmt.executeQuery(sql);
             // must assign the rs.next() value into a new variable, if use rs.next() directly, the cursor will be next record, cause if judge wrong
             boolean flag = rs.next();
-            System.out.println(flag);
+//            System.out.println(flag);
             if (flag) {
                 tid = rs.getInt("tid");
 //                System.out.println("tid: " + tid);
@@ -420,7 +446,7 @@ public class DaoModel {
      * @param rid the id to be deleted
      */
     public void deleteRecord(String rid) {
-        System.out.println(rid);
+//        System.out.println(rid);
         try {
             stmt = conn.connect().createStatement();
             String sql = "DELETE FROM m_li_fp_records " +
