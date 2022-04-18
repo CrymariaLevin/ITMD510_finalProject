@@ -39,9 +39,8 @@ public class UsersModel {
     }
 
     public void setPassword(String password) {
-//         encryption password string with md5
-        String password_md5 = getMD5String(password);
-        this.password = password_md5;
+//        String password_md5 = getMD5String(password);
+        this.password = password;
     }
 
     public int getIs_admin() {

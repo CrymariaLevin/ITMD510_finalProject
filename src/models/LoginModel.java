@@ -35,6 +35,7 @@ public class LoginModel extends DBConnect {
         try(PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setString(1, username);
             stmt.setString(2, password_md5);
+            System.out.println(stmt);
             ResultSet rs = stmt.executeQuery();
             if(rs.next()) {
                 setAdmin(rs.getBoolean("is_admin"));

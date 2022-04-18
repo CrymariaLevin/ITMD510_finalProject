@@ -50,8 +50,6 @@ public class RecordFXModel {
         this.date = new SimpleObjectProperty<LocalDateTime>(date);
         this.transaction = new SimpleStringProperty(transaction);
         this.amount = new SimpleDoubleProperty(amount);
-
-        // Data that wont show in TableView
         this.location = new SimpleStringProperty(location);
 //        this.uid = new SimpleIntegerProperty(uid);
 //        this.tid = new SimpleIntegerProperty(tid);

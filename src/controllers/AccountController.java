@@ -113,7 +113,7 @@ public class AccountController {
             user.setUsername(usernameField.getText());
             user.setPassword(pwdField.getText());
             user.setIs_admin(privField.getValue());
-//            System.out.println(user.getUsername()+", " + user.getIs_admin());
+//            System.out.println(user.getUsername()+", " + user.getPassword()+", " + user.getIs_admin());
 
             okClicked = true;
             dialogStage.close();

@@ -35,6 +35,7 @@ public class Preparation{
         type_obj.add(new TypesModel("Clothes","Expense"));
         type_obj.add(new TypesModel("Salary","Income"));
         type_obj.add(new TypesModel("Stock","Income"));
+        type_obj.add(new TypesModel("accident","Income"));
         dao.insertTypes(type_obj);
         System.out.println("================data insert complete=========================");
 
@@ -45,6 +46,11 @@ public class Preparation{
         record_obj.add(new RecordsModel("2022-04-05 17:00:50",77.5,"AA Square","meeting",3,2));
         record_obj.add(new RecordsModel("2022-04-01 12:30:44",12.5,"District Building","Home",2,1));
         record_obj.add(new RecordsModel("2022-04-07 07:00:12",50000.0,"Workplace","April",4,2));
+        record_obj.add(new RecordsModel("2022-04-06 20:00:10",98.5,"YHC","",1,2));
+        record_obj.add(new RecordsModel("2022-04-04 16:00:10",59.9,"Yonikolo","shirts",3,1));
+        record_obj.add(new RecordsModel("2022-04-05 17:00:50",77.5,"YHC","sea food",1,1));
+        record_obj.add(new RecordsModel("2022-04-03 12:30:44",117.5,"YHC","Pizza",1,1));
+        record_obj.add(new RecordsModel("2022-03-27 07:00:12",1314.52,"Home","anniversary",6,1));
         dao.insertRecords(record_obj);
         System.out.println("================data insert complete=========================");
     }
