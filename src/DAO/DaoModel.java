@@ -358,7 +358,7 @@ public class DaoModel {
                 String username = rs.getString("username");
                 username_array.add(username);
             }
-            stmt.close();
+//            stmt.close();
             conn.connect().close();
 
         } catch (SQLException e) {
@@ -387,7 +387,7 @@ public class DaoModel {
             }else{
                 uid = -1;
             }
-            stmt.close();
+//            stmt.close();
             conn.connect().close();
             return uid;
         } catch (SQLException e) {
@@ -418,7 +418,6 @@ public class DaoModel {
 //            System.out.println(flag);
             if (flag) {
                 tid = rs.getInt("tid");
-//                System.out.println("tid: " + tid);
 //                create new type
             }else if((transaction.equals("Expense") || transaction.equals("Income")) && typename.length() > 0){
                 String sql_insert = "INSERT INTO M_Li_fp_types (`typename`,`transaction`)VALUES ('" + typename +"', '" + transaction +"')";
@@ -431,7 +430,7 @@ public class DaoModel {
             else{
                 tid = -1;
             }
-            stmt.close();
+//            stmt.close();
             conn.connect().close();
             return tid;
         } catch (SQLException e) {
@@ -451,6 +450,7 @@ public class DaoModel {
             stmt = conn.connect().createStatement();
             String sql = "DELETE FROM m_li_fp_records " +
                     "WHERE rid = " + rid;
+            System.out.println(sql);
             stmt.executeUpdate(sql);
             stmt.close();
             conn.connect().close();
@@ -532,7 +532,7 @@ public class DaoModel {
             if (uid > 0)
                 pstmt.setInt(6, uid);
             pstmt.setInt(7, Integer.parseInt(recordfx.getRid()));
-//            System.out.println(pstmt);
+            System.out.println(pstmt);
             pstmt.executeUpdate();
             try {
                 connection.commit();
@@ -547,6 +547,38 @@ public class DaoModel {
         } catch (Exception se) {
             System.out.println("Insert Error:\n");
             se.printStackTrace();
+        }
+    }
+
+    /**
+     * Get latest rid in record table
+     *
+     * Returns -1 if the String could not be converted.
+     *
+     * @return the rid or null if it could not be converted
+     */
+    public int retrieveLatestRid() {
+        int rid;
+        try {
+            String sql = "{call GET_LAST_RID(?)}";
+//            System.out.println(sql);
+            CallableStatement stmt=conn.connect().prepareCall(sql);
+
+            //Set IN parameter
+//            stmt.setInt(1, 1);
+
+            //Set OUT parameter
+            stmt.registerOutParameter(1, Types.INTEGER);
+            //Execute stored procedure
+            stmt.execute();
+            // Get Out parameters
+            rid = stmt.getInt(1);
+            System.out.println("Latest rid = "+rid);
+            return rid;
+            }
+            catch (SQLException e) {
+            e.printStackTrace();
+            return -1;
         }
     }
 }

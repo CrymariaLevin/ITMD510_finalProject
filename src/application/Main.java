@@ -1,10 +1,11 @@
-package application;
-
 /**
  * Final project for ITMD510.
- * JavaFX app for login page
- * @author Mingyi Li
+ * Program to create a account book app to store and operate data with different users's privilege through database, display with JavaFX.
+ * Programmer: Li Mingyi Student, File Name: Main.java
+ * this file is to create an login page
  */
+
+package application;
 
 import controllers.IndexController;
 import javafx.application.Application;

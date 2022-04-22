@@ -199,12 +199,13 @@ public class IndexController {
     @FXML
     private void handleNewRecord() {
 //        RecordFXModel tempRecord = new RecordFXModel();
-        RecordFXModel tempRecord = new RecordFXModel("", LocalDateTime.now(),"Expense",0.0,"","","","");
+        DaoModel dao = new DaoModel();
+        int latest_rid = dao.retrieveLatestRid();
+        RecordFXModel tempRecord = new RecordFXModel(String.valueOf(latest_rid), LocalDateTime.now(),"Expense",0.0,"","","","");
         boolean okClicked = indexApp.showRecordEditDialog(tempRecord);
         if (okClicked) {
 //            now record's data has been edited
             indexApp.getRecordsData().add(tempRecord);
-            DaoModel dao = new DaoModel();
             dao.insertNewRecords(tempRecord);
         }
     }
@@ -219,6 +220,7 @@ public class IndexController {
         if (selectedRecord != null) {
             boolean okClicked = indexApp.showRecordEditDialog(selectedRecord);
             if (okClicked) {
+                System.out.println("rid: " + selectedRecord.getRid());
                 showRecordDetails(selectedRecord);
                 DaoModel dao = new DaoModel();
                 dao.updateEditRecords(selectedRecord);
